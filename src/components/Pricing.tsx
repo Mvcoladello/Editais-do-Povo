@@ -9,21 +9,16 @@ const plans = [
     cta: "Começar Grátis",
   },
   {
-    name: "Padrão",
+    name: "Mensal",
     price: "R$ 29,90",
-    features: ["Alertas personalizados", "Acesso a detalhes completos dos editais", "Suporte prioritário por e-mail"],
+    features: ["Notificacoes personalizadas via whatsapp e email", "Busca otimizada de acordo com suas preferencias", "Suporte prioritário"],
     cta: "Assinar Agora",
     recommended: true,
   },
   {
-    name: "Premium",
-    price: "R$ 59,90",
-    features: [
-      "Todos os recursos do plano Padrão",
-      "Análise de editais por especialistas",
-      "Suporte 24/7 por chat e telefone",
-      "Curso preparatório online incluso",
-    ],
+    name: "Anual",
+    price: "R$ 299,90",
+    features: ["Economia de 20% em relacao ao plano mensal","Notificacoes personalizadas via whatsapp e email", "Busca otimizada de acordo com suas preferencias", "Suporte prioritário"],
     cta: "Escolher Premium",
   },
 ]

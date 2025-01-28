@@ -11,6 +11,7 @@ import {
   SelectSeparator,
 } from "@/components/ui/select"
 import Image from "next/image"
+import DashboardMockup from "./DashboardMockup"
 
 export default function Hero() {
   return (
@@ -38,13 +39,15 @@ export default function Hero() {
           </form>
         </div>
         <div className="md:w-1/2">
-          <Image
-            src="/placeholder.svg?height=400&width=600"
-            alt="Painel de resultados"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg"
-          />
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary to-blue-600 transform skew-y-3 rounded-3xl shadow-2xl"></div>
+            <div className="relative bg-white p-4 rounded-lg shadow-lg">
+              <DashboardMockup />
+            </div>
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 bg-alert text-primary font-bold py-2 px-4 rounded-full transform rotate-12">
+              Novo!
+            </div>
+          </div>
         </div>
       </div>
     </section>
